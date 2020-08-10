@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "update-sprite": "svg-sprite -s --symbol-dest icons --symbol-sprite icons.svg icons/individual-icons/*.svg",
-    "update-sprite-with-preview": "svg-sprite -s --symbol-dest icons --symbol-sprite icons.svg --symbol-example true --symbol-example-dest index.html icons/individual-icons/*.svg && cd icons && python -m SimpleHTTPServer",
-    "serve-sandbox": "python -m SimpleHTTPServer"
+    "serve-sandbox": "python -m SimpleHTTPServer",
+    "update-sprite-with-preview": "svg-sprite -s --symbol-dest icons --symbol-sprite icons.svg --symbol-example true --symbol-example-dest index.html icons/individual-icons/*.svg",
+    "serve-example": "npm run update-sprite-with-preview && cd icons && python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",
