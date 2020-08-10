@@ -1,0 +1,25 @@
+{
+  "name": "easy-peasy-svgeezy",
+  "version": "1.0.0",
+  "description": "Example code for generating SVG sprites on the fly using svg-sprite and NPM scripts",
+  "main": "index.js",
+  "scripts": {
+    "update-sprite": "svg-sprite -s --symbol-dest icons --symbol-sprite icons.svg icons/individual-icons/*.svg",
+    "update-sprite-with-preview": "svg-sprite -s --symbol-dest icons --symbol-sprite icons.svg --symbol-example true --symbol-example-dest index.html icons/individual-icons/*.svg && cd icons && python -m SimpleHTTPServer",
+    "serve-sandbox": "python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jooleearr/easy-peasy-svgeezy.git"
+  },
+  "author": "Julia Tokumaru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jooleearr/easy-peasy-svgeezy/issues"
+  },
+  "homepage": "https://github.com/jooleearr/easy-peasy-svgeezy#readme",
+  "devDependencies": {
+    "svg-sprite": "^1.5.0",
+    "svg4everybody": "^2.1.9"
+  }
+}

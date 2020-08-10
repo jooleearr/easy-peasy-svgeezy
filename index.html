@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Easy Peasy SVGeezy | Test page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+      body {
+        padding: 40px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin: 40px 0;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icons svg {
+        fill: currentColor;
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Yay icons! (hopefully...)</h1>
+
+    <div class="icons">
+
+      <svg>
+        <use xlink:href="icons/icons.svg#chevron-down"></use>
+      </svg>
+
+      <svg>
+        <use xlink:href="icons/icons.svg#chevron-left"></use>
+      </svg>
+
+      <svg>
+        <use xlink:href="icons/icons.svg#chevron-right"></use>
+      </svg>
+
+      <svg>
+        <use xlink:href="icons/icons.svg#chevron-up"></use>
+      </svg>
+
+      <svg>
+        <use xlink:href="icons/icons.svg#heart"></use>
+      </svg>
+
+    </div>
+
+    <script src="/node_modules/svg4everybody/dist/svg4everybody.min.js"></script>
+    <script>svg4everybody()</script>
+
+  </body>
+
+</html>
